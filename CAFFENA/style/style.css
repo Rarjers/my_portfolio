@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 1180px;
+    margin: 0 auto;
+}
+/* --- Header menu start -- */
+.header_wrapp, .navigation_block_left, .navigation_block_right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.navigation_search_headeer {
+    display: flex;
+    align-items: center;
+}
+.navigation_block_left, .navigation_block_right {
+    margin-top: -20px;
+    margin-right: -50px;
+}
+.navigation_block_left > a, .navigation_block_right > a {
+    margin-right: 50px;
+    color: black;
+    text-decoration: none;
+    position: relative;
+}
+.navigation_block_left > a::before,
+.navigation_block_right > a::before {
+    position: absolute;
+    width: 0;
+    left: 0;
+    bottom: -2px;
+    content: " ";
+    height: 2px;
+    background-color: black;
+    transition: all .5s ease-in-out;
+}
+.navigation_block_left > a:hover::before,
+.navigation_block_right > a:hover::before {
+    width: 100%;
+}
+.img_search {
+    margin: 0 70px 0 40px;
+}
+.navigation_search_headeer > img {
+    width: 20px;
+}
+
+/* --- Header menu end -- */
+
+/* --- Section one menu end -- */
+
+.wrapp_first_deesc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 105px;
+}
+.block_deesc_left > h1 {
+    font-family: 'ZCOOL XiaoWei';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 70px;
+    letter-spacing: 0.04em;
+    margin-bottom: 0px;
+}
+.block_deesc_left > p {
+    letter-spacing: 0.04em;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    width: 500px;
+    margin-top: 33px;
+}
+.block_button_desc_one {
+    margin-top: 64px;
+    margin-left: -29px;
+}
+.block_button_desc_one > a {
+    margin-left: 29px;
+    text-decoration: none;
+    letter-spacing: 0.04em;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+.link_desc_one_one {
+    color: white;
+    background-color: black;
+    padding: 10px 13px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+    border: 1px solid black;
+    border-radius: 5px;
+    transition: all .4s ease-in-out;
+}
+.link_desc_one_one:hover,
+.link_desc_one_two:hover {
+    color: black;
+    background-color: white;
+    border: 1px solid #D48A5C;
+}
+.link_desc_one_two {
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+    padding: 10px 23px;
+    border: 1px solid black;
+    transition: all .4s ease-in-out;
+}
+
+
+/* --- Section one end -- */
