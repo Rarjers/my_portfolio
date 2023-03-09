@@ -197,8 +197,11 @@ body {
 }
 /* --- Section three end -- */
 /* --- Section four end -- */
+#background_color {
+    background: #F7F2EE;
+}
 .wrapp_link {
-    margin-top: 150px;
+    padding-top: 150px;
     text-align: center;
 }
 .wrapp_link > h2 {
@@ -208,5 +211,54 @@ body {
     font-size: 55px;
     line-height: 65px;
     letter-spacing: 0.04em;
+}
+.wrapp_block_price_coffe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left_block_price, .right_block_price {
+    display: grid;
+    grid-template-columns: 127px 417px;
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    grid-row-gap: 34px;
+}
+.left_block_price > img, .right_block_price > img {
+    border-radius: 100%;
+    width: 160px;
+    height: 160px;
+    z-index: 1;
+}
+.left_block_price > p, .right_block_price > p {
+    position: relative;
+    margin: 0;
+    font-family: 'ZCOOL XiaoWei';
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 65px;
+    letter-spacing: 0.04em;
+    border: 3px solid #414141;
+    padding: 8px 21px 34px 50px;
+}
+.left_block_price > p > span, .right_block_price > p > span{
+    position: absolute;
+    right: 45px;
+    bottom: 7px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.04em;
+    color: #D48A5C;
+}
+.coffe_grid_position_two {
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.coffe_grid_position_three {
+    grid-row-start: 3;
+    grid-row-end: 4;
 }
 /* --- Section four end -- */
