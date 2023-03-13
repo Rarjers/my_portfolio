@@ -192,13 +192,14 @@ body {
     line-height: 26px;
     letter-spacing: 0.04em;
 }
-.block_text_in_background > a {
+.decoration_link > a {
     text-decoration: none;
 }
 /* --- Section three end -- */
 /* --- Section four end -- */
 #background_color {
     background: #F7F2EE;
+    padding-bottom: 94px;
 }
 .wrapp_link {
     padding-top: 150px;
@@ -262,3 +263,31 @@ body {
     grid-row-end: 4;
 }
 /* --- Section four end -- */
+/* --- Section five start -- */
+.wrapp_coffe_machine {
+    padding: 37px 0 37px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left_block_machine > h2 {
+    font-family: 'ZCOOL XiaoWei';
+    font-size: 55px;
+    line-height: 65px;
+    letter-spacing: 0.04em;
+    margin: 0 0 34px 0;
+}
+.left_block_machine > p {
+    letter-spacing: 0.04em;
+    font-family: 'Open Sans';
+    line-height: 26px;
+    margin: 0 0 7px 0;
+}
+.margin_link_machine {
+    margin-top: 42px;
+}
+.right_block_machine > img {
+    width: 380px;
+    height: 600px;
+}
+/* --- Section five end -- */
