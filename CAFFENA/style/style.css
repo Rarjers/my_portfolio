@@ -1,0 +1,423 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 1115px;
+    margin: 0 auto;
+}
+/* --- Header menu start -- */
+.header_wrapp, .navigation_block_left, .navigation_block_right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.navigation_search_headeer {
+    display: flex;
+    align-items: center;
+}
+.navigation_block_left, .navigation_block_right {
+    margin-top: -20px;
+    margin-right: -50px;
+}
+.navigation_block_left > a, .navigation_block_right > a {
+    margin-right: 50px;
+    color: black;
+    text-decoration: none;
+    position: relative;
+}
+.navigation_block_left > a::before,
+.navigation_block_right > a::before {
+    position: absolute;
+    width: 0;
+    left: 0;
+    bottom: -2px;
+    content: " ";
+    height: 2px;
+    background-color: black;
+    transition: all .5s ease-in-out;
+}
+.navigation_block_left > a:hover::before,
+.navigation_block_right > a:hover::before {
+    width: 100%;
+}
+.img_search {
+    margin: 0 70px 0 40px;
+}
+.navigation_search_headeer > img {
+    width: 20px;
+}
+
+/* ---- style style burger menu --- */
+
+.burger_menu_style_position {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.burger_menu {
+    rotate: 0deg;
+    transition: all .5s ease-in-out;
+    position: relative;
+}
+.burger_meny_list {
+    position: absolute;
+    top: 10%;
+    background-color: skyblue;
+    list-style: none;
+    padding: 20px 10px;
+    display: none;
+}
+
+
+/* ----- end style burger menu ---- */
+/* --- Header menu end -- */
+
+/* --- Section one menu end -- */
+
+.wrapp_first_deesc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 105px;
+    margin-bottom: 166px;
+}
+.block_deesc_left > h1 {
+    font-family: 'ZCOOL XiaoWei';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 70px;
+    letter-spacing: 0.04em;
+    margin-bottom: 0px;
+}
+.block_deesc_left > p {
+    letter-spacing: 0.04em;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    width: 500px;
+    margin-top: 33px;
+}
+.block_button_desc_one {
+    margin-top: 64px;
+    margin-left: -29px;
+}
+.block_button_desc_one > a {
+    margin-left: 29px;
+    text-decoration: none;
+    letter-spacing: 0.04em;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+.link_desc_one_one {
+    color: white;
+    background-color: black;
+    padding: 10px 13px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+    border: 1px solid black;
+    border-radius: 5px;
+    transition: all .4s ease-in-out;
+}
+.link_desc_one_one:hover,
+.link_desc_one_two:hover {
+    color: black;
+    background-color: white;
+    border: 1px solid #D48A5C;
+}
+.link_desc_one_two {
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+    padding: 10px 23px;
+    border: 1px solid black;
+    transition: all .4s ease-in-out;
+}
+
+
+/* --- Section one end -- */
+/* --- Section two start -- */
+.wrapp_best_coffe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 94px;
+}
+.wrapp_best_coffe > div > img {
+    -webkit-box-shadow: -15px 15px 0px -2px #D48A5C; 
+    box-shadow: -15px 15px 0px -2px #D48A5C;
+}
+/* --- Section two end -- */
+/* --- Section three start -- */
+#background_img {
+    background-image: url(../img/background_coffe.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 729px;
+}
+.wrapp_background_cofee {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 729px;
+}
+.block_text_in_background {
+    width: 670px;
+}
+.block_text_in_background > h1 {
+    font-family: 'ZCOOL XiaoWei';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 65px;
+    letter-spacing: 0.04em;
+    margin-bottom: 10px;
+}
+.block_text_in_background > p {
+    padding-bottom: 10px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.04em;
+}
+.decoration_link > a {
+    text-decoration: none;
+}
+/* --- Section three end -- */
+/* --- Section four end -- */
+#background_color {
+    background: #F7F2EE;
+    padding-bottom: 94px;
+}
+.wrapp_link {
+    padding-top: 150px;
+    text-align: center;
+}
+.wrapp_link > h2 {
+    margin-top: 24px;
+    font-family: 'ZCOOL XiaoWei';
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 65px;
+    letter-spacing: 0.04em;
+}
+.wrapp_block_price_coffe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left_block_price, .right_block_price {
+    display: grid;
+    grid-template-columns: 127px 417px;
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    grid-row-gap: 34px;
+}
+.left_block_price > img, .right_block_price > img {
+    border-radius: 100%;
+    width: 160px;
+    height: 160px;
+    z-index: 1;
+}
+.left_block_price > p, .right_block_price > p {
+    position: relative;
+    margin: 0;
+    font-family: 'ZCOOL XiaoWei';
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 65px;
+    letter-spacing: 0.04em;
+    border: 3px solid #414141;
+    padding: 8px 21px 34px 50px;
+}
+.left_block_price > p > span, .right_block_price > p > span{
+    position: absolute;
+    right: 45px;
+    bottom: 7px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.04em;
+    color: #D48A5C;
+}
+.coffe_grid_position_two {
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.coffe_grid_position_three {
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+/* --- Section four end -- */
+/* --- Section five start -- */
+.wrapp_coffe_machine {
+    padding: 37px 0 37px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left_block_machine > h2 {
+    font-family: 'ZCOOL XiaoWei';
+    font-size: 55px;
+    line-height: 65px;
+    letter-spacing: 0.04em;
+    margin: 0 0 34px 0;
+}
+.left_block_machine > p {
+    letter-spacing: 0.04em;
+    font-family: 'Open Sans';
+    line-height: 26px;
+    margin: 0 0 7px 0;
+}
+.margin_link_machine {
+    margin-top: 42px;
+}
+.right_block_machine > img {
+    width: 380px;
+    height: 600px;
+}
+/* --- Section five end -- */
+/* --- Section six start -- */
+.background {
+    background-color: #F7F2EE;
+}
+.header_best_product {
+    padding-top: 91px;
+    margin-bottom: 47px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_best_product > p {
+    font-family: 'ZCOOL XiaoWei';
+    font-size: 55px;
+    line-height: 65px;
+    letter-spacing: 0.04em;
+    color: #1C1A1A;
+    margin: 0;
+}
+.wrapp_best_product {
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    grid-template-rows: 454px;
+    grid-gap: 30px;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+.best_item {
+    background-color: white;
+    padding: 23px;
+}
+.img_best_product {
+    background-color: black;
+    height: 267px;
+}
+.img_best_product > img {
+    display: block;
+    margin: auto;
+    height: 100%;
+}
+.block_ratings_product > p {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.04em;
+    margin-bottom: 17px;
+}
+.block_ratings_product > ul, .block_ratings_product {
+    display: flex;
+    align-items: center;
+}
+.block_ratings_product > ul {
+    padding-left: 10px;
+}
+.star {
+    list-style-type: none;
+}
+.star::after{
+    content: "☆";
+    color: #EAB665;
+}
+.active::after {
+    content: "★";
+}
+.block_name_price_product>p:first-of-type{
+    font-family: 'ZCOOL XiaoWei';
+    font-size: 24px;
+    line-height: 50px;
+    letter-spacing: 0.04em;
+    margin: 0;
+}
+.block_name_price_product>p:nth-child(even) {
+    font-family: 'Open Sans';
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0.04em;
+    margin: 0;
+}
+.block_name_price_product > p > span {
+    color: #EAB665;
+}
+/* --- Section six end -- */
+/* --- Section seven start -- */
+.margin_link_ratings {
+    padding-top: 100px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+/* Block Slider start */
+.wrapp_slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 0;
+}
+.slider_content {
+    width: 100%;
+    max-width: 762px;
+}
+.slider_header > h2 {
+    font-family: 'ZCOOL XiaoWei';
+    font-size: 55px;
+    line-height: 65px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 31px;
+}
+.slider_body > p {
+    font-family: 'Open Sans';
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #5C5C5C;
+    margin-top: 0;
+    margin-bottom: 39px;
+}
+.slider_photo {
+    text-align: center;
+}
+.slider_photo > img {
+    border-radius: 100%;
+}
+.slider_photo > p {
+    margin-top: 8px;
+}
+
+/* Block Slider end */
+/* --- Section seven end -- */
