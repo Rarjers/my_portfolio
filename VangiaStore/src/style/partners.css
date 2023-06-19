@@ -1,0 +1,23 @@
+#margin_section_two {
+    margin-top: 100px;
+}
+.style_partners_text {
+    text-align: center;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 80px;
+}
+.wrapp_icon_partners {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -80px;
+    margin-top: 50px;
+}
+.wrapp_icon_partners > img {
+    margin-left: 80px;
+    opacity: .5;
+    width: 150px;
+}

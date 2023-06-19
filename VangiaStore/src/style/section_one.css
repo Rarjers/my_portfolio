@@ -1,0 +1,47 @@
+#background_color {
+    background-color: #FFF7F4;
+    padding-bottom: 70px;
+}
+.wrapp_main_layer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main_photo {
+    width: 600px;
+}
+.wrapp_text > p:first-child {
+    color: #FA6430;
+    font-size: 20px;
+    line-height: 229%;
+    font-family: var(--main-fonts-poppins);
+}
+.wrapp_text > h1 {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+}
+.wrapp_text > h1 > span {
+    color: #FA6430;
+}
+.description {
+    margin-top: 30px;
+    font-family: var(--main-fonts-poppins);
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 50px;
+}
+.new_product {
+    position: relative;
+}
+.img_new_product_one, .img_new_product_two {
+    width: 150px;
+    position: absolute;
+    right: 10px;
+    bottom: -40px;
+}
+.img_new_product_one {
+    right: 120px;
+    z-index: 1;
+}

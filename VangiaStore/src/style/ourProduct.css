@@ -1,0 +1,40 @@
+.wrapp_our_product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.item_our_product > p {
+    width: 460px;
+}
+.item_our_product > p:nth-child(1){
+    color: #FA6430;
+    font-family: var(--main-fonts-poppins);
+    font-size: 18px;
+    line-height: 229%;
+    letter-spacing: 0.135em;
+}
+.item_our_product > p:nth-child(2){
+    font-family: 'Playfair Display';
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 50px;
+    text-transform: capitalize;
+    color: #0F1428;
+}
+.item_our_product > p:nth-child(3) {
+    margin-bottom: 20px;
+}
+.item_our_product > p:nth-child(4) {
+    margin-bottom: 50px;
+}
+.item_our_product > p:nth-child(3), .item_our_product > p:nth-child(4){
+    font-family: var(--main-fonts-poppins);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 35px;
+    color: #0F1428;
+    opacity: 0.6;
+}
+.item_our_product_img > img {
+    width: 580px;
+}

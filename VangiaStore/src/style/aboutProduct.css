@@ -1,0 +1,63 @@
+#wrapp_about_product {
+    margin: 150px auto;
+}
+.header_text_product {
+    text-align: center;
+}
+.header_text_product > p {
+    font-family: var(--main-fonts-poppins);
+    font-size: 24px;
+    text-transform: uppercase;
+    line-height: 229%;
+    letter-spacing: 0.135em;
+    color: #FA6430;
+}
+.header_text_product > h2 {
+    font-family: 'Playfair Display';
+    width: 762px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 80px;
+    text-transform: capitalize;
+    margin: 0 auto;
+}
+.wrapp_flowers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 100px;
+    grid-gap: 150px;
+}
+.item_flowers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.item_flowers > img {
+    width: 130px;
+}
+.item_flowers > p:nth-child(2) {
+    margin-top: 50px;
+    color: #FA6430;
+    font-family: 'Playfair Display';
+    font-size: 55px;
+    line-height: 80px;
+}
+.item_flowers > p:nth-child(3) {
+    color: #0F1428;
+    font-family: 'Playfair Display';
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 229%;
+}
+.item_flowers > p:nth-child(4) {
+    color: #0F1428;
+    font-family: var(--main-fonts-poppins);
+    font-size: 16px;
+    line-height: 35px;
+    opacity: 0.6;
+    text-align: center;
+}

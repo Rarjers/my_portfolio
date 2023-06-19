@@ -1,0 +1,43 @@
+#margin_product_types {
+    margin-top: 150px;
+}
+.wrapp_product_types {
+    text-align: center;
+}
+.wrapp_product_types > h2 {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 80px;
+}
+.care_options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 630px;
+    margin: 30px auto 100px auto;
+}
+.care_options > li {
+    cursor: pointer;
+    display: inline;
+    position: relative;
+    text-decoration-style: none;
+    font-family: var(--main-fonts-poppins);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+}
+.care_options > li::before {
+    content: ' ';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: -1px;
+    background-color: black;
+    transition: all .3s ease-in-out;
+}
+.care_options > li:hover::before  {
+    width: 100%;
+}
