@@ -4,6 +4,8 @@ import OurPartners from './partners.js'
 import AboutProduct from './aboutProduct.js'
 import OurProduct from './ourProduct.js'
 import ProductTypes from './productTypes.js'
+import CleansingProcedure from './cleansingProcedure.js'
+import Reviews from './reviews.js'
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
       <AboutProduct />
       <OurProduct />
       <ProductTypes />
+      <CleansingProcedure />
+      <Reviews />
     </div>
   );
 }

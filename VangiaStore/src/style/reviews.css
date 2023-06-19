@@ -1,0 +1,21 @@
+#margin_reviews {
+    margin-top: 150px;
+}
+.wrapp_reviews {
+    text-align: center;
+}
+.wrapp_reviews > h2 {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 80px;
+}
+.wrapp_reviews > p {
+    font-family: var(--main-fonts-poppins);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 45px;
+    color: #6A6A6A;
+}
