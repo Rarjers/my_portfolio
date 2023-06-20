@@ -6,6 +6,7 @@ import OurProduct from './ourProduct.js'
 import ProductTypes from './productTypes.js'
 import CleansingProcedure from './cleansingProcedure.js'
 import Reviews from './reviews.js'
+import Footer from './footer.js'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <ProductTypes />
       <CleansingProcedure />
       <Reviews />
+      <Footer />
     </div>
   );
 }

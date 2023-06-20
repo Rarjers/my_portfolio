@@ -43,3 +43,30 @@
     background: url(../img/arrowsLeft.svg) no-repeat #F3EEEB center;
     cursor: pointer;
 }
+.wrapp_radio_buttons {
+    text-align: center;
+    margin-top: 70px;
+    margin-left: -30px;
+}
+.wrapp_radio_buttons > label {
+    margin-left: 30px;
+}
+/* Скрываем нативные radio кнопки */
+input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+/* Создаем стилизованные radio кнопки */
+.custom-radio {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: #F3EEEB;
+    cursor: pointer;
+}
+/* Добавляем стили для выбранной radio кнопки */
+.custom-radio-active {
+    background-color: black;
+}
