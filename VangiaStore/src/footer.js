@@ -1,9 +1,9 @@
 import './style/footer.css'
 import Button from './UI/Buttons.js'
-import Logo from './img/Logo.svg'
-import FaceBook from './img/faceboock.svg'
-import Twitter from './img/twitter.svg'
-import Linked from './img/linkend.svg'
+import FaceBook from './img/Facebook icon.svg'
+import Twitter from './img/twitter icon.svg'
+import Linked from './img/lindedin icon.svg'
+import WhiteLogo from './img/Logo_white.svg'
 
 const footer = () => {
     return (
@@ -21,12 +21,12 @@ const footer = () => {
                 </div>
                 <div className='wrapp_footer_contact'>
                     <div className='logo_social_media'>
-                        <img src = {Logo} alt = "logo"/>
+                        <img src = {WhiteLogo} alt = "logo"/>
                         <p>Best online cosmetic shop for all your beauty products</p>
                         <div className='social_media_icon'>
-                            <img src = {FaceBook} alt = "facebook"/>
-                            <img src = {Twitter} alt = "twitter"/>
-                            <img src = {Linked} alt = "linkend"/>
+                            <a href ="#hom"><img src = {FaceBook} alt = "facebook"/></a>
+                            <a href ="#hom"><img src = {Twitter} alt = "twitter"/></a>
+                            <a href ="#hom"><img src = {Linked} alt = "linkend"/></a>
                         </div>
                     </div>
                     <div className='wrapp_company_contact'>
