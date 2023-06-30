@@ -1,3 +1,4 @@
+import React from 'react'
 import './style/section_one.css'
 import Button from './UI/Buttons.js'
 import MainPhoto from "./img/mainPhoto.png"
@@ -5,7 +6,8 @@ import newProductOne from "./img/newProduckOne.png"
 import newProductTwo from './img/newProductTwo.png'
 
 
-const sectionOne = () => {
+const SectionOne = () => {
+
     const backgroundColor = 'background_color';
     const seeNewProduct = 'see_new_product';
 
@@ -31,4 +33,4 @@ const sectionOne = () => {
     );
 }
 
-export default sectionOne;
+export default SectionOne;

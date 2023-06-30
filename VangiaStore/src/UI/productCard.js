@@ -5,7 +5,11 @@ import PhotoProduct3 from '../img/photoProduct3.png'
 import PhotoProduct4 from '../img/photoProduct4.png'
 import Buttons from './Buttons'
 
-const productCard = () => {
+const productCard = ({incrementProductQuantity}) => {
+    const clickButton = () => {
+        incrementProductQuantity();
+    };
+
     const addCard = "add_product_in_basket"
     const seeMore = "see_more_button"
 
@@ -17,28 +21,28 @@ const productCard = () => {
                     <h5>GARNIER</h5>
                     <p>Product applied to the skin and various body parts to make</p>
                     <p>$52.99</p>
-                    <Buttons className={addCard} text="Add to Cart"/>
+                    <Buttons click={clickButton} className={addCard} text="Add to Cart"/>
                 </div>
                 <div className='product_items'>
                     <img src = {PhotoProduct2} alt='product'/>
                     <h5>PANTENE</h5>
                     <p>Product applied to the skin and various body parts to make</p>
                     <p>$52.99</p>
-                    <Buttons className={addCard} text="Add to Cart"/>
+                    <Buttons click={clickButton} className={addCard} text="Add to Cart"/>
                 </div>
                 <div className='product_items'>
                     <img src = {PhotoProduct3} alt='product'/>
                     <h5>DOVE</h5>
                     <p>Product applied to the skin and various body parts to make</p>
                     <p>$52.99</p>
-                    <Buttons className={addCard} text="Add to Cart"/>
+                    <Buttons click={clickButton} className={addCard} text="Add to Cart"/>
                 </div>
                 <div className='product_items'>
                     <img src = {PhotoProduct4} alt='product'/>
                     <h5>CLINIQUE</h5>
                     <p>Product applied to the skin and various body parts to make</p>
                     <p>$52.99</p>
-                    <Buttons className={addCard} text="Add to Cart"/>
+                    <Buttons click={clickButton} className={addCard} text="Add to Cart"/>
                 </div>
             </div>
             <Buttons className={seeMore} text="See More"/>

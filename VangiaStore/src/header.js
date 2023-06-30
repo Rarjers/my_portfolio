@@ -3,7 +3,8 @@ import Logo from './img/Logo.svg'
 import Basket from './img/Basket.svg'
 import menu from './img/menu.svg'
 
-const Header = () => {
+const Header = (props) => {
+
     return (
         <nav className="container navigation">
             <div className = "logo">
@@ -15,8 +16,8 @@ const Header = () => {
                 <p>Promotions</p>
             </div>
             <div>
-                <div className = "parrent_basket">
-                    <span className = "number_product">2</span>
+                <div className = "parrent_basket" >
+                    <span className = "number_product">{props.productQuantity}</span>
                     <img className = "basket" src = {Basket} alt="Basket" />
                 </div>
                 <img className = "menu" src = {menu} alt = "Menu" />

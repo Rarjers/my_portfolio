@@ -4,7 +4,7 @@
 .wrapp_product_card {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     margin-right: -50px;
 }
 .product_items {

@@ -48,6 +48,7 @@
     font-size: 13px;
     font-family: var(--main-fonts-poppins);
     text-align: center;
+    display: none;
 }
 .tex_nav {
     margin-left: -80px;
