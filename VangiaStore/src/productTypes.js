@@ -30,7 +30,7 @@ const ProductTypes = ({ incrementProductQuantity }) => {
                 in={showProductCard1 === 1}
                 classNames="fade"
                 timeout={400}
-                unmountOnExit
+                unmountOnExit={true}
                 >
                 <ProductCard incrementProductQuantity={incrementProductQuantity} />
                 </CSSTransition>
@@ -39,7 +39,7 @@ const ProductTypes = ({ incrementProductQuantity }) => {
                 in={showProductCard1 === 2}
                 classNames="fade"
                 timeout={400}
-                unmountOnExit
+                unmountOnExit={true}
                 >
                 <BodyCare incrementProductQuantity={incrementProductQuantity} />
                 </CSSTransition>
@@ -48,7 +48,7 @@ const ProductTypes = ({ incrementProductQuantity }) => {
                 in={showProductCard1 === 3}
                 classNames="fade"
                 timeout={400}
-                unmountOnExit
+                unmountOnExit={true}
                 >
                 <HairCare incrementProductQuantity={incrementProductQuantity} />
                 </CSSTransition>
@@ -57,7 +57,7 @@ const ProductTypes = ({ incrementProductQuantity }) => {
                 in={showProductCard1 === 4}
                 classNames="fade"
                 timeout={400}
-                unmountOnExit
+                unmountOnExit={true}
                 >
                 <Perfumes incrementProductQuantity={incrementProductQuantity} />
                 </CSSTransition>

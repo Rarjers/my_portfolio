@@ -33,14 +33,18 @@
 }
 .parrent_basket {
     position: relative;
-    display: inline;
+    display: flex;
+}
+.wrapp_basket {
+    position: relative;
+    cursor: pointer;
 }
 .menu {
     margin-left: 60px;
 }
 .number_product {
     position: absolute;
-    top: -15px;
+    top: -7px;
     right: -5px;
     background-color: #FB9873;
     border-radius: 100%;
@@ -70,4 +74,37 @@
 }
 .tex_nav > p:hover::before {
     width: 100%;
+}
+.product_in_cart {
+    width: 500px;
+    background-color: white;
+    position: absolute;
+    right: 50%;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: grid;
+    grid-auto-rows: auto;
+}
+.product_unit_visible {
+    display: none;
+}
+.item_product {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    justify-items: center
+}
+.item_product_dell {
+    display: none;
+}
+.item_product > p {
+    margin: 0 20px;
+}
+.width_product_in_busket {
+    width: 55px;
+}
+.button_dell_product {
+    width: 20px;
 }
