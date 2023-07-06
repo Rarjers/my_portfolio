@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Header from './header.js';
 import SectionOne from './section_one.js'
 import OurPartners from './partners.js'
@@ -11,16 +11,21 @@ import Footer from './footer.js'
 import UseProductQuantity from './UI/useProductQuantity.js';
 
 function App() {
-  const [productQuantity, incrementProductQuantity] = UseProductQuantity();
+  const [productQuantity, incrementProductQuantity, uninstallProduct] = UseProductQuantity();
 
+  const [selectedProduct, setSelectedProduct] = useState(null);
+
+  const handleProductSelection = (product) => {
+    setSelectedProduct(product);
+  };
   return (
     <div>
-      <Header productQuantity={productQuantity}/>
+      <Header productQuantity={productQuantity} onSelectProduct={selectedProduct} uninstallProduct={uninstallProduct}/>
       <SectionOne />
       <OurPartners />
       <AboutProduct />
       <OurProduct />
-      <ProductTypes incrementProductQuantity={incrementProductQuantity}/>
+      <ProductTypes onSelectProduct={handleProductSelection} incrementProductQuantity={incrementProductQuantity}/>
       <CleansingProcedure />
       <Reviews />
       <Footer />

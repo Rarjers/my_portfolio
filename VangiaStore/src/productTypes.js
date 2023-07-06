@@ -6,7 +6,7 @@ import BodyCare from './UI/bodyCare.js'
 import HairCare from './UI/hairCare.js'
 import Perfumes from './UI/perfumes'
 
-const ProductTypes = ({ incrementProductQuantity }) => {
+const ProductTypes = ({ incrementProductQuantity, onSelectProduct }) => {
     const [showProductCard1, setShowProductCard1] = useState(1);
 
     const handleButtonClick = (number) => {
@@ -50,7 +50,7 @@ const ProductTypes = ({ incrementProductQuantity }) => {
                 timeout={400}
                 unmountOnExit={true}
                 >
-                <HairCare incrementProductQuantity={incrementProductQuantity} />
+                <HairCare onSelectProduct={onSelectProduct} incrementProductQuantity={incrementProductQuantity} />
                 </CSSTransition>
 
                 <CSSTransition

@@ -5,9 +5,21 @@ import PhotoProduct3 from '../img/Hair care2.png'
 import PhotoProduct4 from '../img/Hair care3.png'
 import Buttons from './Buttons'
 
-const hairCare = ({incrementProductQuantity}) => {
-    const clickButton = () => {
+const hairCare = ({ incrementProductQuantity, onSelectProduct }) => {
+
+    const clickButton = (e) => {
         incrementProductQuantity();
+
+        const productItem = e.target.closest('.product_items');
+        const image = productItem.querySelector("img").src;
+        const name = productItem.querySelector("h5").textContent;
+        
+        const product = {
+            image: image,
+            name: name
+        };
+        
+        onSelectProduct(product);
     };
 
     const addCard = "add_product_in_basket"
@@ -17,8 +29,8 @@ const hairCare = ({incrementProductQuantity}) => {
         <section className='container' id = 'margin_product_card'>
             <div className='wrapp_product_card'>
                 <div className='product_items'>
-                    <img src = {PhotoProduct1} alt='product'/>
-                    <h5>Hair Care1</h5>
+                    <img className='testImg' src = {PhotoProduct1} alt='product'/>
+                    <h5 className='testHead'>Hair Care1</h5>
                     <p>Product applied to the Hair and various body parts to make</p>
                     <p>$40</p>
                     <Buttons click={clickButton} className={addCard} text="Add to Cart"/>
