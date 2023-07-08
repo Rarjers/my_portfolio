@@ -6,7 +6,7 @@ import newProductOne from "./img/newProduckOne.png"
 import newProductTwo from './img/newProductTwo.png'
 
 
-const SectionOne = () => {
+const SectionOne = ({scrollToBlock}) => {
 
     const backgroundColor = 'background_color';
     const seeNewProduct = 'see_new_product';
@@ -18,7 +18,7 @@ const SectionOne = () => {
                     <p>ALL NATURAL</p>
                     <h1>Select <span>beauty</span> for your skin</h1>
                     <p className='description'>Vangia offers high quality, effective products at unbeatable prices. Our team of experts have formulated a range of products with the finest ingredients to satisfy your needs.</p>
-                    <Button link="#home" className={backgroundColor} text="View Products"/>
+                    <Button click={scrollToBlock} link="#home" className={backgroundColor} text="View Products"/>
                 </div>
                 <div>
                     <img className='main_photo' src={MainPhoto} alt="main_photo" />

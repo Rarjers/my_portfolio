@@ -34,7 +34,7 @@
     width: 0%;
     height: 2px;
     left: 0;
-    bottom: -1px;
+    bottom: -2px;
     background-color: black;
     transition: all .3s ease-in-out;
 }
@@ -55,3 +55,6 @@
     opacity: 0;
     transition: opacity 400ms ease-in-out;
 }  
+.active {
+    border-bottom: solid 2px black;
+}

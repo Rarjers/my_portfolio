@@ -6,8 +6,21 @@ import menu from './img/menu.svg'
 import ButtonClose from './img/button close.svg'
 import EmptyBasket from './img/empty_basket.svg'
 
-const Header = ({productQuantity, onSelectProduct, uninstallProduct}) => {
+const Header = ({productQuantity, onSelectProduct, uninstallProduct, scrollToBlock}) => {
     const [productsInCart, setProductsInCart] = useState([]);
+    const [isVisible, setIsVisible] = useState(false);
+
+    const toggleVisibility = () => {
+        setIsVisible((prevVisible) => !prevVisible);
+        let rotateBurgerMeny = document.querySelector('.menu');
+        if (rotateBurgerMeny.classList.contains('rotate_burger_meny')) {
+            rotateBurgerMeny.classList.remove("rotate_burger_meny");
+            rotateBurgerMeny.classList.add("rotate_burger_meny_end");
+        } else {
+            rotateBurgerMeny.classList.add("rotate_burger_meny");
+            rotateBurgerMeny.classList.remove("rotate_burger_meny_end");
+        }
+    };
 
     let number = productQuantity;
     const visibleBakset = () => {
@@ -35,6 +48,7 @@ const Header = ({productQuantity, onSelectProduct, uninstallProduct}) => {
         }
     }, [onSelectProduct]);
 
+
     return (
         <nav className="container navigation">
             <div className = "logo">
@@ -42,7 +56,7 @@ const Header = ({productQuantity, onSelectProduct, uninstallProduct}) => {
             </div>
             <div className = 'tex_nav'>
                 <p>Home</p>
-                <p>Products</p>
+                <p onClick={scrollToBlock}>Products</p>
                 <p>Promotions</p>
             </div>
             <div>
@@ -51,7 +65,19 @@ const Header = ({productQuantity, onSelectProduct, uninstallProduct}) => {
                         <span className = "number_product">{number}</span>
                         <img onClick={visibleBakset} className = "basket" src = {Basket} alt="Basket" />
                     </div>
-                    <img className = "menu" src = {menu} alt = "Menu" />
+                    <div className='meny'>
+                    <img
+                        onClick={toggleVisibility}
+                        className="menu"
+                        src={menu}
+                        alt="Menu"
+                        />
+                        <div className={`slide-element ${isVisible ? 'visible' : ''}`}>
+                            <a href="#home" >Home</a>
+                            <a href="#Products" onClick={scrollToBlock}>Products</a>
+                            <a href="#Promotions">Promotions</a>
+                        </div>
+                    </div>
                     <div className='basket_plug toogle_visib_empty_basket'>
                         <img src={EmptyBasket} alt='empty basket'/>
                         <p>Sorry, your shopping cart is empty. Please choose a product.</p>

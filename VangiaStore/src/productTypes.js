@@ -6,24 +6,26 @@ import BodyCare from './UI/bodyCare.js'
 import HairCare from './UI/hairCare.js'
 import Perfumes from './UI/perfumes'
 
-const ProductTypes = ({ incrementProductQuantity, onSelectProduct }) => {
+const ProductTypes = ({ incrementProductQuantity, onSelectProduct, blockRef }) => {
     const [showProductCard1, setShowProductCard1] = useState(1);
+    const [activeButton, setActiveButton] = useState(1);
 
-    const handleButtonClick = (number) => {
+    const handleButtonClick = (number, index) => {
         setShowProductCard1(number);
+        setActiveButton(index);
     };
 
     return (
-        <section className='container' id = 'margin_product_types'>
+        <section ref={blockRef} className='container' id = 'margin_product_types'>
             <div className='wrapp_product_types'>
                 <h2>Few Types of Recipes</h2>
             </div>
             <nav className='parrent_block_nav_product'>
                 <ul className='care_options'>
-                    <li onClick={() => handleButtonClick(2)}>Body Care</li>
-                    <li onClick={() => handleButtonClick(1)}>Skin care</li>
-                    <li onClick={() => handleButtonClick(3)}>Hair care</li>
-                    <li onClick={() => handleButtonClick(4)}>Perfumes</li>
+                    <li onClick={() => handleButtonClick(2, 2)} className={activeButton === 2 ? 'active' : ''}>Body Care</li>
+                    <li onClick={() => handleButtonClick(1, 1)} className={activeButton === 1 ? 'active' : ''}>Skin care</li>
+                    <li onClick={() => handleButtonClick(3, 3)} className={activeButton === 3 ? 'active' : ''}>Hair care</li>
+                    <li onClick={() => handleButtonClick(4, 4)} className={activeButton === 4 ? 'active' : ''}>Perfumes</li>
                 </ul>
             </nav>
             <CSSTransition
@@ -32,7 +34,7 @@ const ProductTypes = ({ incrementProductQuantity, onSelectProduct }) => {
                 timeout={400}
                 unmountOnExit={true}
                 >
-                <ProductCard incrementProductQuantity={incrementProductQuantity} />
+                <ProductCard onSelectProduct={onSelectProduct} incrementProductQuantity={incrementProductQuantity} />
                 </CSSTransition>
 
                 <CSSTransition
@@ -41,7 +43,7 @@ const ProductTypes = ({ incrementProductQuantity, onSelectProduct }) => {
                 timeout={400}
                 unmountOnExit={true}
                 >
-                <BodyCare incrementProductQuantity={incrementProductQuantity} />
+                <BodyCare onSelectProduct={onSelectProduct} incrementProductQuantity={incrementProductQuantity} />
                 </CSSTransition>
 
                 <CSSTransition
@@ -59,7 +61,7 @@ const ProductTypes = ({ incrementProductQuantity, onSelectProduct }) => {
                 timeout={400}
                 unmountOnExit={true}
                 >
-                <Perfumes incrementProductQuantity={incrementProductQuantity} />
+                <Perfumes onSelectProduct={onSelectProduct} incrementProductQuantity={incrementProductQuantity} />
                 </CSSTransition>
 
         </section>

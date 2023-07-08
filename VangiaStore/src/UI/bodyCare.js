@@ -5,9 +5,21 @@ import PhotoProduct3 from '../img/bodyCare2.jpeg'
 import PhotoProduct4 from '../img/bodyCare3.png'
 import Buttons from './Buttons'
 
-const bodyCare = ({incrementProductQuantity}) => {
-    const clickButton = () => {
+const bodyCare = ({incrementProductQuantity, onSelectProduct}) => {
+
+    const clickButton = (e) => {
         incrementProductQuantity();
+
+        const productItem = e.target.closest('.product_items');
+        const image = productItem.querySelector("img").src;
+        const name = productItem.querySelector("h5").textContent;
+        
+        const product = {
+            image: image,
+            name: name
+        };
+        
+        onSelectProduct(product);
     };
 
     const addCard = "add_product_in_basket"

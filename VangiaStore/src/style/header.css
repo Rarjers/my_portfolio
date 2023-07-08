@@ -34,6 +34,7 @@
 .parrent_basket {
     position: relative;
     display: flex;
+    align-items: center;
 }
 .wrapp_basket {
     position: relative;
@@ -134,6 +135,51 @@
     opacity: .3;
     font-size: 14px;
 }
+.meny {
+    position: relative;
+    cursor: pointer;
+}
+.rotate_burger_meny {
+    transform: rotate(180deg);
+    transition: transform .3s ease-in-out;
+}
+.rotate_burger_meny_end {
+    transform: rotate(0deg);
+    transition: transform .3s ease-in-out;
+}
 .toogle_visib_empty_basket {
     display: none;
+}
+.slide-element {
+    height: 0;
+    width: 150px;
+    overflow: hidden;
+    transition: height .3s ease-in-out;
+    position: absolute;
+    background-color: white;
+    text-align: center;
+    background-color: white;
+    position: absolute;
+    top: 30px;
+    border-radius: 15px;
+}
+
+.slide-element.visible {
+    height: 120px;
+    width: 150px;
+    text-align: center;
+    background-color: white;
+    position: absolute;
+    transition: height .3s ease-in-out;
+
+}
+.slide-element > a {
+    padding-top: 15px;
+    display: block;
+    text-decoration: none;
+    color: black;
+    transition: color .3s ease-in-out;
+}
+.slide-element > a:hover {
+    color: #FA6430;
 }

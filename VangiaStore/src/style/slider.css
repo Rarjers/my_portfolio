@@ -1,7 +1,8 @@
-.wrapp_slider {
+.wrapp_slider, .wrapp_items_slide {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 270px;
 }
 .slider_item {
     display: flex;
@@ -70,3 +71,27 @@ input[type="radio"] {
 .custom-radio-active {
     background-color: black;
 }
+
+.slide-enter {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  
+  .slide-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 500ms, transform 800ms;
+  }
+  
+  .slide-exit {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .slide-exit-active {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 100ms, transform 800ms;
+    display: none;
+  }
+  
