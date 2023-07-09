@@ -85,6 +85,8 @@
     margin-top: 50px;
     display: grid;
     grid-auto-rows: auto;
+    top: 0;
+    z-index: 9;
 }
 .product_unit_visible {
     display: none;
@@ -108,6 +110,7 @@
 }
 .button_dell_product {
     width: 20px;
+    cursor: pointer;
 }
 .basket_plug {
     width: 500px;
@@ -117,6 +120,7 @@
     border-radius: 5px;
     margin-top: 50px;
     display: block;
+    top: 0;
 }
 .basket_plug > img {
     text-align: center;
